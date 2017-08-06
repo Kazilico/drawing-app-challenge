@@ -85,3 +85,5 @@ Submit a pull request!
 
 **I still have a question.**  
 Submit a Github issue.
+
+This is my drawing app for the drawing app challenge. Not much to it at the moment.
