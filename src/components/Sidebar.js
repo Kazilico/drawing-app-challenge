@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ToolSelector from "./ToolSelector";
 import BrushSize from "./BrushSize";
+import Stamp from "./Stamp";
 
 export default class Sidebar extends Component {
 	render() {
@@ -21,6 +22,13 @@ export default class Sidebar extends Component {
 					<BrushSize
 						brush_size={ brush_size }
 						action={ actions.changeSize }
+					/>
+				</section>
+				<section className="section section--stamp">
+					<h3 className="section__heading">Image Stamp</h3>
+					<Stamp
+						/*stamp={ stamp }*/
+						action={ actions.stamp }
 					/>
 				</section>
 			</div>

@@ -1,5 +1,6 @@
 import { SELECT_TOOL, CHANGE_SIZE } from "../constants/ActionTypes";
 import { BRUSH } from "../constants/Tools";
+import { STAMP } from "../constants/Tools";
 
 const initialState = {
 	tool: BRUSH,
