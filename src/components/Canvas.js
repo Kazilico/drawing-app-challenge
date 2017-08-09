@@ -1,5 +1,5 @@
 import React, { PropTypes, Component } from "react";
-import { BRUSH, STAMP, ERASER } from "../constants/Tools";
+import { BRUSH, COLOR, STAMP, ERASER, SAVE } from "../constants/Tools";
 
 let ctx;
 

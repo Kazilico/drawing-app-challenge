@@ -23,7 +23,18 @@ export default function tools(state = initialState, action) {
 				tool: action.text
 			})
 
+		case COLOR:
+			return Object.assign({}, state, {
+				tool: action.text
+			})
+
 		default:
 			return state
 	}
 }
+/*
+const initialState = {
+	tool: COLOR,
+	value: "#FFFFFF"
+}
+*/

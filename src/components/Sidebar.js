@@ -25,7 +25,7 @@ export default class Sidebar extends Component {
 				</section>
 				<section className="section section--colorPicker">
 					<h3 className="section__heading">Brush Color</h3>
-					<Stamp
+					<ColorPicker
 						action={ actions.colorPicker }
 					/>
 				</section>
@@ -38,13 +38,13 @@ export default class Sidebar extends Component {
 				</section>
 				<section className="section section--eraser">
 					<h3 className="section__heading">Reset</h3>
-					<Stamp
+					<Eraser
 						action={ actions.eraser }
 					/>
 				</section>
 				<section className="section section--save">
 					<h3 className="section__heading">Save</h3>
-					<Stamp
+					<Save
 						action={ actions.save }
 					/>
 				</section>
