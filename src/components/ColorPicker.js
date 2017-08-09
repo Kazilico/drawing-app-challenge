@@ -5,8 +5,8 @@ export default function Color(props) {
 	return (
 		<input
 			type="color"
-			className="ColorPicker"
-			defaultValue={brush_size}
+			className="color-input"
+			defaultValue={ #FFFFFF }
 			onChange={ (e) => {
 				action(e.target.value)
 			}}
