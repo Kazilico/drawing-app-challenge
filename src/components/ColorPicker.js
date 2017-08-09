@@ -1,11 +1,11 @@
 import React, { PropTypes } from "react";
 
-export default function BrushSize(props) {
-	const { action, brush_size } = props;
+export default function Color(props) {
+	const { action, color } = props;
 	return (
 		<input
-			type="number"
-			className="number-input"
+			type="color"
+			className="ColorPicker"
 			defaultValue={brush_size}
 			onChange={ (e) => {
 				action(e.target.value)
