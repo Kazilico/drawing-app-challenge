@@ -1,12 +1,12 @@
 import React, { PropTypes } from "react";
 
-export default function Color(props) {
-	const { action, color } = props;
+export default function ColorPicker(props) {
+	const { action, color_picker } = props;
 	return (
 		<input
 			type="color"
 			className="color-input"
-			defaultValue={ #FFFFFF }
+			defaultValue={ color_picker }
 			onChange={ (e) => {
 				action(e.target.value)
 			}}
@@ -14,7 +14,7 @@ export default function Color(props) {
 	);
 }
 
-BrushSize.propTypes = {
-	brush_size: PropTypes.string.isRequired,
+ColorPicker.propTypes = {
+	color_picker: PropTypes.string.isRequired,
 	action: PropTypes.func.isRequired
 };

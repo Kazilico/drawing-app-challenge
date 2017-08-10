@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import ToolSelector from "./ToolSelector";
 import BrushSize from "./BrushSize";
+import ColorPicker from "./ColorPicker";
 import Stamp from "./Stamp";
 
 export default class Sidebar extends Component {
 	render() {
 		const { tools, actions } = this.props;
 		const { brush_size } = tools;
+		const { color_picker } = tools;
 		return (
 			<div className="sidebar">
 				<section className="section section--tool-selector">
@@ -25,9 +27,10 @@ export default class Sidebar extends Component {
 				</section>
 				<section className="section section--colorPicker">
 					<h3 className="section__heading">Brush Color</h3>
-					/*<BrushSize
+					<ColorPicker
+						color_picker={ color_picker }
 						action={ actions.colorPicker }
-					/>*/
+					/>
 				</section>
 				<section className="section section--stamp">
 					<h3 className="section__heading">Image Stamp</h3>

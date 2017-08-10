@@ -1,6 +1,6 @@
 import { SELECT_TOOL, CHANGE_SIZE } from "../constants/ActionTypes";
 import { BRUSH } from "../constants/Tools";
-import { COLOR } from "../constants/Tools";
+import { COLOR_PICKER } from "../constants/Tools";
 
 
 const initialState = {
@@ -20,7 +20,7 @@ export default function tools(state = initialState, action) {
 				tool: action.text
 			})
 
-		case COLOR:
+		case COLOR_PICKER:
 			return Object.assign({}, state, {
 				tool: action.text
 			})
